@@ -9,7 +9,7 @@ METADATA=${METADATA:-"{}"}
 AUTO_ASSIGN_RELEASE=${AUTO_ASSIGN_RELEASE:-false}
 VERSION=${VERSION:-$GITHUB_REF}
 
-echo curl $URL \
+curl $URL \
     --header "Content-Type: application/json" \
     --data '{
       "apiKey": "'${BUGSNAG_API_KEY}'",
