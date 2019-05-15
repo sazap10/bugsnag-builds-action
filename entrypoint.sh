@@ -7,7 +7,7 @@ RELEASE_STAGE=${RELEASE_STAGE:-production}
 BUILDER_NAME=${BUILDER_NAME:-"Bugsnag build reporting"}
 METADATA=${METADATA:-"{}"}
 AUTO_ASSIGN_RELEASE=${AUTO_ASSIGN_RELEASE:-false}
-VERSION=${VERSION:-$GITHUB_REF}
+VERSION=${VERSION:-$(echo "$GITHUB_REF" | rev | cut -d"/" -f1  | rev)}
 
 curl $URL \
     --header "Content-Type: application/json" \
