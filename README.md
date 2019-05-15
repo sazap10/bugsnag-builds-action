@@ -15,7 +15,7 @@ action "Report build" {
 ```
 
 ### Secrets
-* `BUGSNAG_API_KEY` *Required* - The notifier API key of the project.
+* `BUGSNAG_API_KEY` **Required** - The notifier API key of the project.
 
 ### Environment variables
 * `BUILD_API_URL` *(optional)* - Overrides the default build API url. Defaults to `https://build.bugsnag.com`
