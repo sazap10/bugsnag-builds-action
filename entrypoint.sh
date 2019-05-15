@@ -16,7 +16,7 @@ curl $URL \
       "appVersion": "'${VERSION}'",
       "releaseStage": "'${RELEASE_STAGE}'",
       "autoAssignRelease": "'${AUTO_ASSIGN_RELEASE}'",
-      "builderName": "'${BUILDER_NAME}'",
+      "builderName": "'"${BUILDER_NAME}"'",
       "sourceControl": {
         "provider": "github",
         "repository": "'https://github.com/${GITHUB_REPOSITORY}'",
