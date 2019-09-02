@@ -3,6 +3,14 @@ GitHub Action for reporting builds to Bugsnag using the Build API. This action w
 
 ## Usage
 ```
+    - name: Report build to bugsnag
+      uses: sazap10/bugsnag-builds-action@master
+      env:
+        BUGSNAG_API_KEY: ${{ secrets.BUGSNAG_API_KEY }}
+```
+
+## Usage for HCL syntax
+```
 action "Filter tag" {
   uses = "actions/bin/filter@master"
   args = "tag"
