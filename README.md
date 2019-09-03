@@ -3,6 +3,11 @@ GitHub Action for reporting builds to Bugsnag using the Build API. This action w
 
 ## Usage
 ```
+on:
+  push:
+    tags:
+      - '*'
+...
     - name: Report build to bugsnag
       uses: sazap10/bugsnag-builds-action@master
       env:
