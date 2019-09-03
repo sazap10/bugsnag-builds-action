@@ -7,7 +7,12 @@ on:
   push:
     tags:
       - '*'
-...
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
     - name: Report build to bugsnag
       uses: sazap10/bugsnag-builds-action@master
       env:
