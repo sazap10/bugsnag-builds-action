@@ -1,5 +1,9 @@
 {
+  "masterIssue": true,
   "extends": [
     "config:base"
+  ],
+  "labels": [
+    "renovate"
   ]
 }
