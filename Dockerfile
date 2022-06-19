@@ -1,4 +1,4 @@
-FROM alpine:3.15
+FROM alpine:3.16
 
 LABEL "name"="Bugsnag Build Reporting"
 LABEL "maintainer"="Sachin Pande <sazap10@gmail.com>"
